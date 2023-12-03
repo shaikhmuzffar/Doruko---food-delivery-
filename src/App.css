@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: 'Merriweather', serif; */
+  font-family: 'Montserrat', sans-serif;
+}
+body{
+  height:100vh;
+  width: 100%;
+  
+}
+:root {
+  --blue: #1e90ff;
+  --primary-color: #7DCE13;
+  --secondary-color:#393939;
+  --background-color:#ebebeb;
+  --alt-primary:#03C988;
+  --Section-Heading:32px;
+  --subSection-Heading:20px;
+  --normal-text:16px;
+  --small-text:10px;
+}
+
+.btn-primary{
+  height: 39px;
+  padding: 10px 30px;
+  background-color: #393939;
+  color: #ffff;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+}
+.btn-secondary{
+  height: 39px;
+  padding: 10px 30px;
+  background-color: transparent;
+  color: #393939;
+  border-radius: 5px;
+  outline: none;
+  border: 2px solid #393939;
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: none;
+}
+.seperater{
+  height: 1px;
+  width: 100%;
+  background-color: transparent;
+  border-top:2px dashed #39393956;
+}

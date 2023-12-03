@@ -1,0 +1,164 @@
+/* ======================= FAQs ==================== */
+.FAQs {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/*singleFAQ*/
+.singleFAQ {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.FAQQuestion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    z-index: 10;
+    background-color: #f5f5f5c5;
+}
+
+.FAQQuestion.black {
+    background-color: #393939;
+    color: #fff;
+}
+
+.FAQQuestion span {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* arrow */
+.Arrow {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Arrow img {
+    height: 16px;
+    width: 16px;
+    object-fit: contain;
+}
+
+/* .FAQAnswer  */
+.FAQAnswer {
+    opacity: 0;
+    transform: translateY(-100px);
+    padding: 15px 20px;
+    padding-inline-start: 40px;
+    background-color: #f5f5f5c5;
+    transition: all.3s ease-in-out;
+}
+
+.FAQAnswer.show {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.FAQAnswer span {
+    font-size: 16px;
+    line-height: 25px;
+    color: #393939;
+    opacity: .9;
+}
+
+/* =========================== contactForm ======================= */
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 0 auto;
+    margin-block:3rem;
+}
+
+.contactForm form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    align-items: flex-end;
+}
+
+.contactForm .contactEmail,
+.contactForm .contactMessage {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contactForm .contactEmail label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #393939;
+}
+
+.contactForm .contactEmail input {
+    width: 80%;
+    height: 45px;
+    border-radius: 5px;
+    background-color: #f5f5f5c0;
+    padding-inline-start: 15px;
+    border: none;
+}
+
+.contactForm .contactEmail input:focus {
+    outline: none;
+}
+
+.contactForm .contactEmail input::placeholder {
+    font-size: 12px;
+    opacity: .7;
+}
+
+/* contactMessage */
+.contactForm .contactMessage {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #393939;
+}
+
+.contactForm .contactMessage textarea {
+    width: 80%;
+    height: 45px;
+    border-radius: 5px;
+    background-color: #f5f5f5c0;
+    padding-inline: 15px;
+    padding-block: 15px;
+    height: 100px;
+    border: none;
+}
+
+.contactForm .contactMessage textarea:focus {
+    outline: none;
+    resize: none;
+    
+}
+.contactForm .contactMessage textarea::placeholder {
+    font-size: 12px;
+    opacity: .7;
+}
+
+/* send button */
+.contactForm .send{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.contactForm .send img{
+    width: 0.85rem;
+    height: 0.85rem;
+    object-fit: contain;
+}

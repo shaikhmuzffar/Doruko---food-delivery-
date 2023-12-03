@@ -1,0 +1,65 @@
+import React, { useState } from 'react'
+import FAQData from './FAQData'
+import './support.css'
+
+// images 
+import arrowUp from '../../assets/icons/whiteArrow.png'
+import arrowRight from '../../assets/icons/blackArrow.png'
+import send from '../../assets/icons/send.png'
+
+
+import SectionHeading from '../../components/global/sectionHeading/SectionHeading'
+
+
+export default function Support() {
+    return (
+        <div>
+            <div className="supportSection">
+                <div className="FAQs">
+                    <SectionHeading title="Frequently Asked Questions" />
+
+                    {
+                        FAQData.map(FAQ => <SingleFAQ FAQ={FAQ} />)
+                    }
+                </div>
+
+                <div className="seperator"></div>
+
+                <div className="contactForm">
+                    <SectionHeading title="Still questions?" />
+                    <form action="">
+                        <div className="contactEmail">
+                            <label htmlFor="">Email</label>
+                            <input type="text" placeholder='user@gmail.con' />
+                        </div>
+                        <div className="contactMessage">
+                            <label htmlFor="">Message</label>
+                            <textarea name="" id="" placeholder='message...' ></textarea>
+                        </div>
+                        <a href="" className="btn-primary send"> <img src={send} alt="" /> Send</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+function SingleFAQ({ FAQ }) {
+    const { question, answer } = FAQ;
+    const [showAns, setshowAns] = useState(false)
+    return (
+        <div className="singleFAQ">
+            <div className={showAns ? "FAQQuestion black" : "FAQQuestion "} onClick={() => setshowAns(!showAns)}>
+                <span>{question}</span>
+                <div className="Arrow">
+                    <img onClick={() => setshowAns(!showAns)} src={showAns ? arrowUp : arrowRight} alt="" />
+                </div>
+            </div>
+            {
+                showAns ? <div className={showAns ? " FAQAnswer show" : "FAQAnswer"}>
+                    <span>{answer}</span>
+                </div> : ""
+            }
+        </div>
+    )
+}

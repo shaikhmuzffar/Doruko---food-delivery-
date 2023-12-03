@@ -1,0 +1,60 @@
+import React, { useState } from 'react'
+
+// css 
+import './products.css'
+
+// data 
+// import productsData from './productsData'
+
+// component
+import Product from '../../components/global/product/Product'
+
+
+export default function Category() {
+  const [categoryItems, setCategoryItems] = useState(productsData.flat())
+  const [filterdata, setfilterdata] = useState(productsData.flat())
+  const [selectedCategory, setselectedCategory] = useState('')
+  const [search, setSearch] = useState('')
+
+  const searchHandler = () =>{
+    if(search){
+      const filteredData = categoryItems.filter(item=>item.name.toLocaleLowerCase().includes(search))
+      setfilterdata(filteredData)
+    }else{
+      setfilterdata(categoryItems)
+    }
+  }
+  const filterHandler = (e) =>{
+    let category =e.target.value;
+    setselectedCategory(category)
+    console.log("b",categoryItems);
+    let filtertedData=categoryItems.filter(item=>item.category===selectedCategory);
+    setfilterdata(filtertedData)
+  }
+  return (
+    <>
+    <div className="searchAndFilter">
+      <div className="filter">
+        <label htmlFor="productCategories">sort by</label>
+        <select value={selectedCategory} name="" id="productCategories" onChange={filterHandler} >
+          <option value="">all items</option>
+          <option value="burger">burgers</option>
+          <option value="pizza">pizzas</option>
+          <option value="cuisine">cuisines</option>
+          <option value="sweet">sweets</option>
+          <option value="vegan">vegan</option>
+        </select>
+      </div>
+      <div className="searchBar">
+        <input value={search} type="text" onChange={(e)=>setSearch(e.target.value)} placeholder='what you want to eat?' />
+        <button className='btn-primary' onClick={searchHandler} >search</button>
+      </div>
+    </div>
+    <div className='allPorducts'>
+      {
+      filterdata.map((productData,index) =><Product key={index} data={productData}/> )
+      }
+    </div>
+    </>
+  )
+}

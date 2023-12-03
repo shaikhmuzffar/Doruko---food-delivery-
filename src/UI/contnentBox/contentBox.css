@@ -1,0 +1,11 @@
+.contentBoxSection{
+    position: relative;
+    flex-basis: 82%;
+    height: 100%;
+}
+
+.contentBoxContainer{
+    width: 95%;
+    height: 100%;
+    margin: 0 auto;
+}

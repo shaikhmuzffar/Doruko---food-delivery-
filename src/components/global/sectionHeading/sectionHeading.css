@@ -1,0 +1,26 @@
+.sectionheading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block-end:2rem;
+}
+.slideArrows{
+    display: flex;
+    column-gap: 15px;
+}
+/* sectionheading title */
+.sectionheading h1{
+    font-family: 'Merriweather', serif;
+    font-size: 1.7rem;
+
+}
+
+.sectionheading .slideArrows img{
+    width: 25px;
+    height: 25px;
+    opacity: .5;
+    transition: all .2s ease-in-out;
+}
+.sectionheading .slideArrows img:hover{
+    opacity: 1;
+}

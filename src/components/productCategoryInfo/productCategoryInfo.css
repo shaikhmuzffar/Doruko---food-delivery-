@@ -1,0 +1,120 @@
+.productCategoryInfoBanner{
+    background-image: url(./vegCategoInfo.png);
+    height: 293px;
+    width: 100%;
+    background-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-position: center;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+.productCategoryInfoBannerInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-inline:80px;
+}
+/* .productCategoryInfoBannerInfoTitle{ */
+.productCategoryInfoBannerInfoTitle{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    color: #fff;
+}
+.productCategoryInfoBannerInfoTitle h1{
+  font-family: 'Merriweather', serif;
+  color: #7DCE13;
+  font-size: 1.8rem;
+    
+}
+/* .productCategoryInfoBannerInfoInputBox{ */
+.productCategoryInfoBannerInfoInputBox{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.productCategoryInfoBannerInfoInputBox input{
+    height: 35px;
+    width: 250px;
+    padding-inline-start:15px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+}
+.productCategoryInfoBannerInfoInputBox button{
+    height: 35px;
+    padding-inline: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #7DCE13;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.productCategoryInfoBannerInfoInputBox button svg{
+    color: #fff;
+}
+/*==================== productCategoryInfoFiltersAndLayout ==================== */
+.productCategoryInfoFiltersAndLayout{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block: 45px;
+}
+.itemFoundsAndFilters{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #393939;
+}
+.productCategoryInfoFiltersAndLayout .itemFoundsAndFilters .productCategoryInfoFilter{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.productCategoryInfoFiltersAndLayout .itemFoundsAndFilters .productCategoryInfoFilter select{
+  width: 140px; 
+  outline: none;
+  border: none;
+  color: #7DCE13;
+  font-weight: 600;
+}
+
+/* rowAndBoxLayout */
+.rowAndBoxLayout{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    gap: 5px;
+}
+.productCategoryInfoLayout{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.productCategoryInfoLayout svg{
+    font-size: 16px;
+    color: #393939;
+    cursor: pointer;
+    opacity: .5;
+    
+}
+.productCategoryInfoLayout svg:hover{
+    opacity: 1;
+}
+.productCategoryInfoLayout .active{
+    opacity: 1;
+}
+/*======================= productCategoryInfoProducts========================= */
+.productCategoryInfoProducts{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}

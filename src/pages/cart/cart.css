@@ -1,0 +1,245 @@
+/*orderSection  */
+.orderSection{
+    position: relative;
+}
+
+.cartWithNoItem2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-block-start:4rem;
+}
+.addSomthing2{
+    margin-block: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #393939;
+}
+
+.addSomthing2 img{
+    height: 10px;
+}
+table{
+    width: 100%;
+    font-size: 16px;
+    color: #393939;
+}
+th,td{
+    width: 100px;
+  }
+
+thead{
+    height: 49px;
+}
+.cartproductImg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cartproductImg img{
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+}
+
+.cartProductInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 6px;
+}
+.cartProductInfo .cartProductCategory{
+    font-size: 12px;
+    opacity: .9;
+}
+.cartProductInfo .cartProductName{
+    font-size: 22px;
+  font-family: 'Merriweather', serif;
+}
+.cartProductInfo .cartProductRestro{
+    font-size: 14px;
+    opacity: .6;
+    font-weight: 500;
+}
+
+/* cartProducts */
+.cartProducts td{
+    padding-block: 1.5rem;
+    border-bottom: 1px solid #3939397e;
+}
+.cartHeader{
+    margin-bottom: 1rem;
+}
+.cartHeader th{
+    padding-block: 1.5rem;
+    border-bottom: 1px solid #3939397e;
+}
+
+/* cartCounter */
+.cartCounter{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 3px;
+    transform: scale(1.1);
+    border-radius: 4px;
+
+}
+.cartCounter .cartPlus, .cartCounter .cartMinus{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    padding: 5px;
+    width: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+.cartCounter .cartPlus img, .cartCounter .cartMinus img{
+    opacity: .5;
+}
+.cartCounter .cartPlus:hover img, .cartCounter .cartMinus:hover img{
+    opacity: 1;
+}
+.cartCounter .cartCounterValue{
+    height: 20px;
+    padding-inline: 10px;
+    opacity: 1;
+    font-weight: 500;
+}
+
+/* cartProductPrice */
+.cartProductPrice{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cartProductPrice span{
+    font-weight: 700;
+    color: #7DCE13;
+    font-size: 22px;
+}
+
+/* cartProductAction */
+.cartProductAction{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cartProductAction button{
+    cursor: pointer;
+    font-size: 12px;
+}
+
+/* ================== paymentAndCheckout =================== */
+.paymentAndCheckout{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 45px;
+}
+.promoCodeAndBill{
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    margin-block-start: 2rem;
+}
+
+/* promoBox */
+.promoBox{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.promoBox p{
+    font-size: 20x;
+    font-weight: 700;
+}
+.promoBox span{
+    font-size: 12px;
+    font-weight: 500;
+    opacity: .6;
+}
+.promoBox .promoInput{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.promoBox .promoInput input{
+    height: 29px;
+    background-color: #f5f5f5;
+    border: none;
+    outline: none;
+    width: 200px;
+    padding-inline: 15px;
+}
+.promoBox .promoInput input:placeholder-shown{
+    opacity: .5;
+    font-size: 10px;
+}
+.promoBox .promoInput button{
+    padding: 0;
+    height: 29px;
+    padding-inline: 20px;
+    font-size: 10px; 
+}
+
+
+/* billBox */
+.billBox{
+    display:flex;
+    gap: 20px;
+    flex-direction: column;
+    width: 300px;
+    
+}
+.subAmmount{
+    display: flex;
+    flex-direction: column;
+    background-color:#f5f5f5;
+    padding: 15px 20px;
+    font-size: 12px;
+    gap: 15px;
+    opacity: .8;
+}
+.billBox .subTotalLine, .billBox .couponCodeLine, .billBox .shippingLine{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.billBox .subTotalLine span:last-child, .billBox .couponCodeLine span:last-child, .billBox .shippingLine span:last-child{
+    font-weight: 700;
+    opacity: .7;
+}
+.totalAmmount{
+    display: flex;
+    justify-content: space-between;
+    background-color:#f5f5f5;
+    padding: 15px 20px;
+    font-size: 16px;
+    opacity: .8;
+
+}
+.totalAmmount span:last-child{
+    font-weight: 700;
+    opacity: .7;
+    color: #7DCE13;
+}
+
+/* ================= cartUserAction ==============  */
+.cartUserAction{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+}

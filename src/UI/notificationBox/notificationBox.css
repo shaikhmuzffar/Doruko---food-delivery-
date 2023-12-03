@@ -1,0 +1,143 @@
+.notificationBox {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    height: fit-content;
+    width: fit-content;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    transform: scale(.8);
+    z-index: 100;
+    padding: 2rem 1.5rem;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    z-index: 100;
+    background-color: #ffff;
+
+}
+
+/* .notificationHeader */
+
+
+
+.notificationHeader {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.notificationTitleAndSettings {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notificationSubTitle {
+    font-size: 12px;
+    opacity: .8;
+}
+
+.notificationSubTitle span {
+    font-weight: 500;
+    color: #7DCE13;
+}
+
+.notificationTitle {
+    font-family: 'Merriweather', serif;
+    font-size: 1.5rem;
+}
+
+.notificationSettings {
+    height: 14px;
+}
+
+/* clearAll */
+.clearAll {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.clearAll span {
+    color: #7DCE13;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+/* notifications */
+.notifications {
+    display: flex;
+    flex-direction: column;
+    padding-block: 1.5rem;
+    height: fit-content;
+    max-height: 300px;
+    overflow: auto;
+    padding-inline: 4px;
+}
+
+.notifications::-webkit-scrollbar {
+    width: 5px;
+}
+
+.notifications::-webkit-scrollbar-track {
+    background: #39393925;
+    display: none;
+}
+
+.notifications:hover::-webkit-scrollbar-track {
+    display: initial;
+}
+
+.notifications::-webkit-scrollbar-thumb {
+    background: #39393942;
+    border-radius: 5px;
+    display: none;
+}
+
+.notifications:hover::-webkit-scrollbar-thumb {
+    display: initial;
+}
+
+.notifications::-webkit-scrollbar-thumb:hover {
+    background: #39393988;
+}
+
+/* noNotifications */
+.noNotifications{
+    width: 320px;
+    font-size: 14px;
+
+}
+/* singleNotification */
+.singleNotification {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    padding-block: 1rem;
+    border-bottom: 1px solid #59595920;
+    width: 320px;
+}
+
+.notificationInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.notificationMessageTitle {
+    font-family: 'Merriweather', serif;
+    font-size: .9rem;
+}
+
+.notificationMessage {
+    font-size: 12px;
+    font-weight: 500;
+    opacity: .7;
+}
+
+.notificationTime {
+    font-size: 10px;
+    font-weight: 500;
+    opacity: .5;
+}

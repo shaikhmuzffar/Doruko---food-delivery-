@@ -1,0 +1,7 @@
+.todaysSpecialSection{
+    margin-block:3rem;
+}
+.todaysSpecialsItems{
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,116 @@
+table{
+    width: 100%;
+    font-size: 16px;
+    color: #393939;
+}
+th,td{
+    width: 100px;
+  }
+
+thead{
+    height: 49px;
+}
+.cartproductImg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cartproductImg img{
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+}
+
+.cartProductInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 6px;
+}
+.cartProductInfo .cartProductCategory{
+    font-size: 12px;
+    opacity: .9;
+}
+.cartProductInfo .cartProductName{
+    font-size: 22px;
+  font-family: 'Merriweather', serif;
+}
+.cartProductInfo .cartProductRestro{
+    font-size: 14px;
+    opacity: .6;
+    font-weight: 500;
+}
+
+/* cartProducts */
+.cartProducts td{
+    padding-block: 1.5rem;
+    border-bottom: 1px solid #3939397e;
+}
+.cartHeader{
+    margin-bottom: 1rem;
+}
+.cartHeader th{
+    padding-block: 1.5rem;
+    border-bottom: 1px solid #3939397e;
+}
+
+/* cartCounter */
+.cartCounter{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 3px;
+    transform: scale(1.1);
+    border-radius: 4px;
+
+}
+.cartCounter .cartPlus, .cartCounter .cartMinus{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    padding: 5px;
+    width: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+.cartCounter .cartPlus img, .cartCounter .cartMinus img{
+    opacity: .5;
+}
+.cartCounter .cartPlus:hover img, .cartCounter .cartMinus:hover img{
+    opacity: 1;
+}
+.cartCounter .cartCounterValue{
+    height: 20px;
+    padding-inline: 10px;
+    opacity: 1;
+    font-weight: 500;
+}
+
+/* cartProductPrice */
+.cartProductPrice{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cartProductPrice span{
+    font-weight: 700;
+    color: #7DCE13;
+    font-size: 22px;
+}
+
+/* cartProductAction */
+.cartProductAction{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cartProductAction button{
+    cursor: pointer;
+    font-size: 12px;
+}

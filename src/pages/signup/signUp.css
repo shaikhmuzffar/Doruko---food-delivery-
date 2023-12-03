@@ -1,0 +1,108 @@
+.SignUpSection{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #393939;
+}
+.SignUpBox{
+    display: flex;
+    gap: 60px;
+}
+/*================ SinUpFormBox =========== */
+.SinUpFormBox{
+    display:flex ;
+    gap: 40px;
+    flex-direction: column;
+    width: 334px;
+}
+/* formHeading */
+.SinUpFormBox .formHeading{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.SinUpFormBox .formHeading h1{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.SinUpFormBox .formHeading span{
+    font-size: .7rem;
+    opacity: .6;
+}
+.SinUpFormBox .formHeading span a{
+    text-decoration: none;
+    /* font-weight: 500; */
+    color: #03C988;
+}
+
+/* form */
+.SinUpFormBox form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+.formInputField{
+    display: flex;
+    flex-direction: column;
+}
+.formInputField label{
+    font-size: 13px;
+    opacity: .8;
+}
+.formInputField input{
+    height: 39px;
+    border: none;
+    border-bottom: 2px solid #03C988;
+    font-weight: 700;
+}
+.formInputField input:focus {
+    outline: none;
+}
+.SinUpFormBox .formButton{
+    text-decoration: none;
+    background-color: #03C988;
+    color: #fff;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+    justify-self: center;
+    font-size: 12px;
+}
+
+/* signOptionsBox */
+.signOptionsBox{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.signOptionsBox .optionsHeader{
+    display: grid;
+    grid-template-columns: 5.5fr 4.5fr 5.5fr;
+    align-items: center;
+    gap: 1rem;
+}
+
+.signOptionsBox .optionsHeader .line{
+    height: .8px;
+    opacity: .25;
+    background-color: #393939;
+}
+.signOptionsBox .optionsHeader .text{
+    opacity: .8;
+    font-size: .7rem;
+}
+.signOptionsBox .signOptions{
+    display: flex;
+    align-items: center;
+}
+.signOptionsBox .signOptions img:hover{
+    opacity: .5;
+}

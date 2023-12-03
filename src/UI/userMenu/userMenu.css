@@ -1,0 +1,83 @@
+.userMenu{
+    position: absolute;
+    top: 50px;
+    right: 210px;
+    width: fit-content;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    transform: scale(.8);
+    z-index: 100;
+    padding: 2rem 1.5rem;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: #fff;
+}
+
+/* .userProfile{ */
+.userProfile{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.userProfileInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.userProfileName{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.userProfileName span{
+    font-size: 14px;
+    font-weight: 600;
+    color: #393939;
+}
+.userProfileEmail{
+    font-size: 10px;
+    font-weight: 500;
+    color: #393939;
+    opacity: .8;
+}
+
+/* userProfileLinks */
+.userProfileLinks{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #59595920;
+    width: fit-content;
+    border-radius: 6px;   
+}
+.userProfileLinks a:first-child{
+    border-bottom: 1px solid #59595920;
+}
+.userProfileLink{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    text-decoration: none;
+    color: #393939;
+    padding: 1rem 1rem;
+    background-color: #fff;
+}
+.userProfileLink:hover{
+    background-color: #f1f1f173;
+}
+.userProfileLinkImg{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.userProfileLinkImg span{
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: .8;
+
+}
+.userProfileLinkImg img{
+    height: 18px;
+}

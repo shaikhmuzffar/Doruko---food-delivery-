@@ -1,0 +1,91 @@
+.navbarSection{
+    margin-block:2rem ;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ======== locationAndSearch ========= */
+.navbar .locationAndSearch{
+    display: flex;
+    gap: 2rem;
+}
+/*  */
+.navLocation{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    opacity: .5;
+}
+.navLocation img{
+    width: 20px;
+    height: 20px;
+}
+.navLocation span{
+    font-size: .8rem;
+    color: #393939;
+
+}
+/* searchbar */
+.searchbar{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color:#F9F8F8;
+    padding-inline: 1rem;
+    border-radius: 5px;
+}
+.searchbar img{
+    height: .8rem;
+    width: .8rem;
+    opacity: .4;
+}
+.searchbar input{
+    width: 250px;
+    border: none;
+    background-color: transparent;
+}
+.searchbar input:focus{
+    outline: none;
+}
+.searchbar input::placeholder{
+    font-size: .8rem;
+    opacity: .7;
+}
+
+
+/* ======= userActions ======= */
+.userActions{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.userActions .userAccount{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+.userAccount img{
+    height: 2rem;
+    width: 2rem;
+}
+.userAccount span{
+    font-size: .8rem;
+    opacity: .8;
+    font-weight: 400;
+}
+.userActions .notificationIcon{
+    height: 1.5rem;
+    width: 1.5rem;
+    object-fit: contain;
+    opacity: .8;
+}
+.userActions .cart{
+    height: 1.4rem;
+    width: 1.4rem;
+    object-fit: contain;
+    opacity: .8;
+
+}

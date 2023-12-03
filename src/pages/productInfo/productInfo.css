@@ -1,0 +1,557 @@
+/* ========================== singleProductImages ========================*/
+.singleProductImages {
+    display: grid;
+    grid-template-columns: 8fr 4fr;
+    gap: 1.5rem;
+}
+
+/* ========= leftImages ========= */
+
+
+.singleProductImages .leftImages img {
+    width: 100%;
+}
+
+/* ========= rightImages ========= */
+
+.singleProductImages .rightImages {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 100%;
+    width: 100%;
+    overflow-y: hidden;
+}
+
+.singleProductImages .rightImages .more {
+    position: relative;
+    height: 227px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.singleProductImages .rightImages .more::after {
+    content: "more images";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Semi-transparent black background */
+    color: white;
+    /* Text color */
+    text-align: center;
+    /* Center the text horizontally and vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    /* Adjust the font size as needed */
+}
+
+.singleProductImages .rightImages .more img {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* ================================== singleProductBody ============================= */
+.singleProductBody {}
+
+.singleProductNameAndRating {
+    display: flex;
+    justify-content: space-between;
+    margin-block-start: 1rem;
+}
+
+.singleProductName {
+    font-size: 32px;
+    font-family: 'Merriweather', serif;
+    color: #393939;
+}
+
+.singleProductRatingAndReviews {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.singleProductRatingAndReviews .rating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: #393939;
+    padding: 5px 10px;
+    border-radius: 6px;
+}
+
+.singleProductRatingAndReviews .rating svg {
+    color: #fff;
+    height: 16px;
+}
+
+.singleProductRatingAndReviews .rating span {
+    color: #fff;
+    font-size: 16px;
+}
+
+.singleProductRatingAndReviews .reviews {
+    font-size: 16px;
+    color: #393939;
+}
+
+/* ============================ singleProductCategoryAndDeliveryDetails ========================= */
+.singleProductCategoryAndDeliveryDetails {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    margin-block-start: 1rem;
+}
+
+.singleProductCategoryAndDeliveryDetails .singleProductTags {
+    display: flex;
+    gap: 5px;
+    font-size: 16px;
+    opacity: .9;
+}
+
+.singleProductCategoryAndDeliveryDetails .singleProductDeliveryDetails {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: .7;
+}
+
+.singleProductCategoryAndDeliveryDetails .singleProductShippingAndTime {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.singleProductCategoryAndDeliveryDetails .singleProductShippingAndTime div {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.singleProductCategoryAndDeliveryDetails .singleProductShippingAndTime div svg {
+    color: #f5ac45;
+    font-size: 20px;
+
+}
+
+/* =============================== priceAndDiscount ================================== */
+.priceAndDiscount {
+    display: flex;
+    gap: 1rem;
+    align-items: baseline;
+    margin-block-start: 1.5rem;
+}
+
+.priceAndDiscount .discountPrice {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.priceAndDiscount .originalPrice {
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: line-through;
+}
+
+.priceAndDiscount .offer {
+    font-size: 14px;
+    font-weight: 500;
+    color: #7DCE13;
+}
+
+/* =============================================== addtoCartWishlistAndShare ==================================== */
+.addtoCartWishlistAndShare {
+    margin-block: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.productInfoATC {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #393939;
+    width: fit-content;
+    padding: 12px 30px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.productInfoATC svg {
+    font-size: 18px;
+}
+
+.productInfoATC span {
+    font-weight: 500;
+}
+
+.productInfoWishList {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #393939;
+    background: transparent;
+    width: fit-content;
+    padding: 12px 30px;
+    border: 1px solid #393939;
+    border-radius: 6px;
+}
+
+.productInfoShare {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #393939;
+    background: transparent;
+    width: fit-content;
+    padding: 12px 15px;
+    border: 1px solid #393939;
+    border-radius: 6px;
+}
+
+.productInfoShare svg {
+    font-size: 18px;
+}
+
+.productInfoShare span {
+    font-weight: 500;
+}
+
+.ATCAndWishlist {
+    display: flex;
+    gap: 2rem;
+}
+
+.ATCAndWishlist svg {
+    font-size: 18px;
+}
+
+/* ================================= singleProducInfoTabsMenus ================================= */
+.singleProducInfoTabs {}
+
+.singleProductInfoTabsMenus {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    list-style: none;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #39393920;
+}
+
+.singleProductInfoTabsMenu {
+    position: relative;
+    font-weight: 600;
+    cursor: pointer;
+    opacity: .9;
+    color: #393939;
+
+}
+
+.singleProductInfoTabsMenu::after {
+    content: '';
+    position: absolute;
+    display: none;
+    top: 182%;
+    left: -12%;
+    height: 2px;
+    width: 125%;
+    background-color: #393939;
+    opacity: .9;
+}
+
+.singleProductInfoTabsMenu.clicked::after {
+    display: initial;
+}
+
+
+/* singleProductInfoTabsDescription */
+.singleProductInfoTabsDescription {
+    font-size: 14px;
+    margin-block-start: 1rem;
+    opacity: .7;
+    line-height: 150%;
+    margin-block-start: 2rem;
+}
+
+/* singleProductInfoTabsDetails */
+.singleProductInfoTabsDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-block-start: 2rem;
+}
+
+
+.nutritionInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.nutritionInfo h1 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.nutritionInfo .nutritionListItems {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 2rem;
+    font-size: 14px;
+    opacity: .8;
+}
+
+.nutritionInfo .nutritionListItems svg {
+    opacity: .7;
+}
+
+.nutritionListItem {
+    display: flex;
+    align-items: center;
+}
+
+.nutritionListItem span {
+    display: flex;
+    gap: 5px;
+}
+
+.ingredients {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.ingredients h1 {
+    font-size: 1rem;
+    font-weight: 600;
+
+}
+
+.ingredients ul {
+    list-style: none;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 14px;
+    opacity: .8;
+}
+
+/*singleProductInfoTabsReviewslist */
+.singleProductInfoTabsReviewslist {
+    display: flex;
+    flex-direction: column;
+    margin-block: 2rem;
+}
+
+.singleProductInfoTabsReviews {
+    display: flex;
+    flex-direction: column;
+}
+
+.singleProductInfoTabsReview {
+    display: flex;
+    gap: 2rem;
+    border-bottom: 1px solid #39393920;
+    padding-block: 1rem;
+}
+
+.singleProductInfoTabsReviewUserImage {
+    width: 50px;
+    height: 50px;
+}
+
+.singleProductInfoTabsReviewUserImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.singleProductInfoTabsReview .singleProductInfoTabsReviewUserInfo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.singleProductInfoTabsReview .singleProductInfoTabsReviewUserInfo .nameDateAndRating {
+    display: flex;
+    justify-content: space-between;
+}
+
+.singleProductInfoTabsReview .singleProductInfoTabsReviewUserInfo .nameDateAndRating .nameAndDate {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.singleProductInfoTabsReviewUserInfoName {
+    font-size: 16px;
+    font-weight: 700;
+    opacity: .9;
+}
+
+.singleProductInfoTabsReviewUserInfoDate {
+    font-size: 12px;
+    opacity: .7;
+}
+
+.singleProductInfoTabsReviewUserInfoRating {
+    display: flex;
+    gap: 5px;
+}
+
+.singleProductInfoTabsReviewUserInfoRating svg {
+    font-size: 12px;
+    opacity: .7;
+}
+
+.singleProductInfoTabsReviewUserInfoRating svg:last-child {
+    opacity: .3;
+}
+
+.singleProductInfoTabsReviewUserInfoUserComment {
+    font-size: 14px;
+    opacity: .7;
+}
+
+
+
+.reviewForm {
+    width: 60%;
+    margin: 0 auto;
+    margin-block-start: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.reviewForm .starsRating {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.reviewForm .starsRating span {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #393939;
+    opacity: .8;
+}
+
+.reviewForm .starsRating .stars {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    opacity: .2;
+    font-size: 15px;
+}
+
+.reviewInputBox {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.reviewInputBox .nameAndEmail {
+    display: flex;
+    gap: 1rem;
+}
+
+.nameAndEmail input {
+    flex-basis: 50%;
+    height: 35px;
+    background-color: #f5f5f5;
+    padding-inline-start: 10px;
+    outline: none;
+    border: none;
+}
+
+.reviewInputBox textarea {
+    height: 100px;
+    resize: none;
+    background-color: #f5f5f5;
+    padding-inline-start: 10px;
+    padding-block-start: 10px;
+    outline: none;
+    border: none;
+}
+
+/* singleProductInfoTabsAboutRestaurant*/
+.singleProductInfoTabsAboutRestaurant{
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+    gap: 1.5rem;
+    margin-block-start: 2rem;
+}
+.singleProductInfoTabsAboutRestaurantImg{
+    width: 100%;
+}
+.singleProductInfoTabsAboutRestaurantImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.singleProductInfoTabsAboutRestaurantInfoNameAndRating {
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    padding-block-end: 1rem;
+    border-bottom: 1px solid #32323221;
+}
+
+.singleProductInfoTabsAboutRestaurantInfoName {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #393939;
+}
+
+.singleProductInfoTabsAboutRestaurantInfoRatingAndAddress {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.singleProductInfoTabsAboutRestaurantInfoRating,
+.singleProductInfoTabsAboutRestaurantInfoReview,
+.singleProductInfoTabsAboutRestaurantInfoAvailablityTime,
+.singleProductInfoTabsAboutRestaurantInfoDistance,
+ .singleProductInfoTabsAboutRestaurantInfoAvailablityDays {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 500;
+    opacity: .8;
+}
+.singleProductInfoTabsAboutRestaurantInfoDistanceAndAvailablity{
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    font-size: 12px;
+    margin-block:1rem;
+
+}
+.singleProductInfoTabsAboutRestaurantInfoAvailablity{
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+.singleProductInfoTabsAboutRestaurantInfoRating svg,
+.singleProductInfoTabsAboutRestaurantInfoReview svg,
+ .singleProductInfoTabsAboutRestaurantInfoDistance svg {
+    color: #393939;
+    opacity: .8;
+}
